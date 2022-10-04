@@ -580,7 +580,7 @@ jogos = [ ["13/07/30 DOM","1930","GRUPO A","Pocitos","Montevidéu","FRANÇA","4"
 ["08/07/98 QUA","1998","SEMIFINAL","Stade de France","Saint-Denis","FRANÇA","2","1","CROÁCIA",""],
 ["11/07/98 SÁB","1998","DECISÃO 3º LUGAR","Stade Parc Lescure I","Paris","HOLANDA","1","2","CROÁCIA",""],
 ["12/07/98 DOM","1998","FINAL","Stade de France","Saint-Denis","FRANÇA","3","0","BRASIL",""],
-["02/02/02 SÁB","2002","GRUPO B","Busan Asiad Main Stadium","Busan","PARAGUAI","2","2","ÁFRICA DO SUL",""],
+["02/06/02 SÁB","2002","GRUPO B","Busan Asiad Main Stadium","Busan","PARAGUAI","2","2","ÁFRICA DO SUL",""],
 ["31/05/02 SEX","2002","GRUPO A","Seoul World Cup Stadium","Seul","FRANÇA","0","1","SENEGAL",""],
 ["01/06/02 SÁB","2002","GRUPO A","Munsu Football Stadium","Ulsan","URUGUAI","1","2","DINAMARCA",""],
 ["01/06/02 SÁB","2002","GRUPO E","Niigata Stadium Big Swan","Niigata","IRLANDA","1","1","CAMARÕES",""],

@@ -1,7 +1,7 @@
 let copa = []
 
 for (let i=0;i<jogos.length;i++){
-    if(jogos[i][1]==1994){
+    if(jogos[i][1]==2002){
         copa.push(jogos[i])
     }
 }
@@ -39,4 +39,3 @@ for (jogo of copa) {
 }
 
 
-// montar_placar("Brasil",1,0,"Alemanha", tagBase)
