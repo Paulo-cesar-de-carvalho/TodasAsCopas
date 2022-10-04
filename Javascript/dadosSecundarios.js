@@ -17,6 +17,3 @@ for (a of anosCopa){
 
 }
 
-seletorAno.addEventListener("change", function(){
-    console.log  (seletorAno.value)
-})
