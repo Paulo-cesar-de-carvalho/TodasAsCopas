@@ -4,22 +4,59 @@
     padding: 0px;
 }
 body{
+    font-family: Helvetica, sans-serif;
     background-color: aqua;
     max-width: 1000px;
     min-width: 400px;
     margin: auto;
 }
+h1{
+    text-align: center;
+}
+.tabela-completa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px 15px;
+    
+}
 
 .placar-completo{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 12px;
     border: 1px solid black;
     width: 350px;
-    
     text-align: center;
-    padding: 15px;
+    padding: 15px 0px;
     background-color: beige;
+    
+    
+}
+.placar-sem-data{
+    padding: 4px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
 }
 
 h2{
     text-align: center;
-    width: 400px;
+    width: 100%;
+}
+.bandeira{
+    width: 24px;
+    height: 18px;
+}
+.pais1, .pais2{
+    width: 100px;
+}
+.pais1{
+    text-align: right;
+}
+.pais2{
+    text-align: left;
 }
