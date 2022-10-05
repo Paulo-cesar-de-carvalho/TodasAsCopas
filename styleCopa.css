@@ -5,6 +5,9 @@
 }
 body{
     background-color: aqua;
+    max-width: 1000px;
+    min-width: 400px;
+    margin: auto;
 }
 
 .placar-completo{
@@ -14,4 +17,9 @@ body{
     text-align: center;
     padding: 15px;
     background-color: beige;
+}
+
+h2{
+    text-align: center;
+    width: 400px;
 }
