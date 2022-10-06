@@ -97,4 +97,4 @@ seletorAno.addEventListener("change", function(){
     montar_copa_do_mundo(this.value)    
 })
 
-
+montar_copa_do_mundo(2002)
