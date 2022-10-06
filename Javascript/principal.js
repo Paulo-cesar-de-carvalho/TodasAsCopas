@@ -72,6 +72,12 @@ function montar_grupo(grupo, ano, tagTabela){
 
 function montar_copa_do_mundo(ano){
     tagBase.innerText = ""
+    divLogoCopa.innerText=""
+    let imgLogoCopa = document.createElement("img")
+    imgLogoCopa.setAttribute ("src",`OutrasImagens/Logo/logo${ano}.png`)
+    imgLogoCopa.setAttribute ("alt",`Logo da copa de ${ano}`)
+    divLogoCopa.appendChild(imgLogoCopa)
+
     for (grupo of listar_grupos_da_copa(ano)){
         montar_grupo(grupo,ano,tagBase)
     }
@@ -87,14 +93,25 @@ function listar_grupos_da_copa(ano){
     let gruposDaCopaUnico = gruposDaCopa.filter(function(This, i){
         return gruposDaCopa.indexOf(This)===i
     })
-    
-    return gruposDaCopaUnico
+
+    //ordena grupos
+    let gruposDaCopaDefinitivo = []
+    for (grupo of ordemGrupos){
+        for (grupoDaCopa of gruposDaCopaUnico){
+            if (grupoDaCopa == grupo){
+                gruposDaCopaDefinitivo.push(grupo)
+            }
+        }
+    }
+    return gruposDaCopaDefinitivo
 }
 
 let tagBase = document.querySelector("#primeira-fase")
+let divLogoCopa = document.querySelector("#logo-da-copa")
 
 seletorAno.addEventListener("change", function(){
     montar_copa_do_mundo(this.value)    
 })
 
-montar_copa_do_mundo(2010)
+montar_copa_do_mundo(1930)
+

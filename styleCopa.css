@@ -12,6 +12,19 @@ body{
 }
 h1{
     text-align: center;
+    margin: 20px 0px 40px 0px;
+}
+
+#ano-da-copa{
+    height: 40px;
+    width: 90px;
+    text-align: center;
+    font-size: 30px;
+}
+#logo-da-copa, img{
+    width: 150px;
+    height: 150px;
+    margin: auto;
 }
 .tabela-completa{
     display: flex;
@@ -34,6 +47,7 @@ h1{
     
 }
 .placar-sem-data{
+    font-weight: bold;
     padding: 4px 0px;
     display: flex;
     flex-direction: row;
