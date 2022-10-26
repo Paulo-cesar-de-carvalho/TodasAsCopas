@@ -13,4 +13,10 @@ h1{
 #cabeca-tabela{
     border: solid 1px black;
 
+
+}
+
+th{
+    writing-mode: vertical-rl;
+    border: 1px solid black;
 }
