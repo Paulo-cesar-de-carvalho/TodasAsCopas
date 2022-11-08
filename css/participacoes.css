@@ -3,14 +3,57 @@
     padding: 0px;
     border: 0px;
 }
-
+body{
+    background-color: aquamarine;
+}
 
 h1{
     color: red;
     text-decoration: underline;
+    margin: 15px auto;
+    text-align: center;
 }
 
-#cabeca-tabela{
+
+.tabela-completa{
+    overflow-x: auto;
+    
+}
+#tabela{
+    border-collapse: collapse;   
+}
+
+#thead-tabela>tr{
+    border-collapse: collapse;
+}
+
+.cabecalho-ano{
+    height: 35px;
     border: solid 1px black;
-
+    transform: rotate(-90deg);
+    background-color: black;
+    color: white;
+    
+    
 }
+
+.primeira-coluna{
+    width: 200px;
+    height: 18px;
+    /*transform: rotate(0deg);*/
+    font-size: 12px;
+}
+
+tbody>tr:nth-child(2n+1){
+    background-color: rgb(132, 148, 132);
+}
+
+
+td{
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+

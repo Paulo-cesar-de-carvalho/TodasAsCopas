@@ -949,3 +949,24 @@ const jogos = [["13/07/1930 DOM","1930","GRUPO A","Pocitos","Montevidéu","Fran�
 
 
 ]
+
+//retorna lista de seleção sem repetir:
+let selecoes = []
+for (jogo of jogos){
+    selecoes.push (jogo[5])
+    selecoes.push (jogo[8])
+}
+var selecoesUnique = selecoes.filter(function(item, i) {
+    return selecoes.indexOf(item) === i;
+});
+selecoesUnique.sort()
+//console.log(selecoesUnique)
+
+function retornar_unico_alfabetico(base){
+    let unicoClassificado = base.filter(function(item,i){
+        return base.indexOf(item) === i
+    })
+    return unicoClassificado.sort()
+}
+
+//console.log(retornar_unico_alfabetico(selecoes))
