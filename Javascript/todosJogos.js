@@ -946,6 +946,23 @@ const jogos = [["13/07/1930 DOM","1930","GRUPO A","Pocitos","Montevidéu","Fran�
 ["28/11/2022 SEG","2022","GRUPO H","Estádio da Cidade da Educação","Al Rayyan","Coreia do Sul","2","3","Gana",""],
 ["02/12/2022 SEX","2022","GRUPO H","Estádio da Cidade da Educação","Al Rayyan","Coreia do Sul","2","1","Portugal",""],
 ["02/12/2022 SEX","2022","GRUPO H","Estádio Al Janoub","Al Wakrah","Gana","0","2","Uruguai",""],
+["03/12/2022 SÁB","2022","OITAVAS DE FINAL","Estádio Internacional Khalifa","Al Rayyan","Holanda","3","1","Estados Unidos",""],
+["03/12/2022 SÁB","2022","OITAVAS DE FINAL","Estádio Ahmed Bin Ali","Al Rayyan","Argentina","2","1","Austrália",""],
+["04/12/2022 DOM","2022","OITAVAS DE FINAL","Estádio Al Thumama","Doha","França","3","1","Polônia",""],
+["04/12/2022 DOM","2022","OITAVAS DE FINAL","Estádio Al Bayt","Al Khor","Inglaterra","3","0","Senegal",""],
+["05/12/2022 SEG","2022","OITAVAS DE FINAL","Estádio Al Janoub","Al Wakrah","Japão","1","1","Croácia","(1X3)"],
+["05/12/2022 SEG","2022","OITAVAS DE FINAL","Estádio 974","Doha","Brasil","4","1","Coreia do Sul",""],
+["06/12/2022 TER","2022","OITAVAS DE FINAL","Estádio da Cidade da Educação","Al Rayyan","Marrocos","0","0","Espanha","(3X0)"],
+["06/12/2022 TER","2022","OITAVAS DE FINAL","Estádio Nacional Lusail","Lusail","Portugal","6","1","Suíça",""],
+["09/12/2022 SEX","2022","QUARTAS DE FINAL","Estádio da Cidade da Educação","Al Rayyan","Croácia","1","1","Brasil","(4X2)"],
+["09/12/2022 SEX","2022","QUARTAS DE FINAL","Estádio Nacional Lusail","Lusail","Holanda","2","2","Argentina","(3X4)"],
+["10/12/2022 SÁB","2022","QUARTAS DE FINAL","Estádio Al Thumama","Doha","Marrocos","1","0","Portugal",""],
+["10/12/2022 SÁB","2022","QUARTAS DE FINAL","Estádio Al Bayt","Al Khor","Inglaterra","1","2","França",""],
+["13/12/2022 TER","2022","SEMIFINAIS","Estádio Nacional Lusail","Lusail","Argentina","3","0","Croácia",""],
+["14/12/2022 QUA","2022","SEMIFINAIS","Estádio Al Bayt","Al Khor","França","2","0","Marrocos",""],
+["17/12/2022 SÁB","2022","DECISÃO 3º LUGAR","Estádio Internacional Khalifa","Al Rayyan","Croácia","2","1","Marrocos",""],
+["17/12/2022 SÁB","2022","FINAL","Estádio Nacional Lusail","Lusail","Argentina","3","3","França","(4X2)"],
+
 
 
 ]
