@@ -3,7 +3,7 @@ let ordemGrupos = ['GRUPO A','GRUPO B','GRUPO C','GRUPO D','GRUPO E','GRUPO F','
     'SEMIFINAIS','GRUPO SEMIFINAIS A','GRUPO SEMIFINAIS B','FASE FINAL','DECISÃO 3º LUGAR','FINAL']
 
 let anosCopa = []
-for (i=1930;i<2023;i=i+4){
+for (i=1930;i<2027;i=i+4){
     if (i<1940 || i>1948){
         anosCopa.push (i)
     }
