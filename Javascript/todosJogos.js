@@ -983,7 +983,7 @@ const jogos = [["13/07/1930 DOM","1930","GRUPO A","Pocitos","Montevidéu","Fran�
 ["12/06/2026 SEX","2026","GRUPO D","SoFi Stadium","Los Angeles","Estados Unidos","","","Paraguai",""],
 ["14/06/2026 DOM","2026","GRUPO D","BC Place","Vancouver","Austrália","","","Turquia",""],
 ["19/06/2026 SEX","2026","GRUPO D","Lumen Field","Seattle","Estados Unidos","","","Austrália",""],
-["20/06/2026 SÁB","2026","GRUPO D","Levi's Stadium","São Francisco","Turquia","","","ParaguaI",""],
+["20/06/2026 SÁB","2026","GRUPO D","Levi's Stadium","São Francisco","Turquia","","","Paraguai",""],
 ["25/06/2026 QUI","2026","GRUPO D","SoFi Stadium","Los Angeles","Turquia","","","Estados Unidos",""],
 ["25/06/2026 QUI","2026","GRUPO D","Levi's Stadium","São Francisco","Paraguai","","","Austrália",""],
 ["14/06/2026 DOM","2026","GRUPO E","NRG Stadium","Houston","Alemanha","","","Curaçao",""],
