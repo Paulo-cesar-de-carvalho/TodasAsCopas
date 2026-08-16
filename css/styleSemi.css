@@ -1,0 +1,25 @@
+body{
+    width: 140;
+}
+
+h1{
+    text-align: center;
+}
+#tabela-semi{
+    border: 5px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    
+}
+
+td, tr, th {
+    border:  2px solid black;
+    width: 120px;
+    margin: 0px;
+    vertical-align: bottom;
+    height: 20px;
+}
+.coluna-anos{
+    width: 60;
+    text-align: center;
+}
