@@ -1066,11 +1066,11 @@ const jogos = [["13/07/1930 DOM","1930","GRUPO A","Pocitos","Montevidéu","Fran�
 ["15/07/2026 QUA","2026","SEMIFINAIS","Mercedes-Benz Stadium","Atlanta","Inglaterra","1","2","Argentina",""],
 ["18/07/2026 SÁB","2026","DECISÃO 3º LUGAR","Hard Rock Stadium","Miami","França","4","6","Inglaterra",""],
 ["19/07/2026 DOM","2026","FINAL","MetLife Stadium","Nova York","Espanha","1","0","Argentina",""],
-
-
-
-
 ]
+
+const temas = ["Data","Ano","Fase","Estádio","Cidade","Seleção1","Placar1","Placar2","Seleção2","Pênalti"]
+
+
 
 //retorna lista de seleção sem repetir:
 let selecoes = []

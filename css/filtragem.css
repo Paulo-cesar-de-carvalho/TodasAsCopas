@@ -1,0 +1,13 @@
+.pesquisa{
+    border: 3px solid purple;
+    background-color: lightblue;
+    height: 200px;
+}
+
+.jogos{
+    border: 3px solid;
+    height: 300px;
+}
+.itens-pesquisa{
+    margin: 10px ;
+}
