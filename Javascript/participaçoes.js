@@ -60,6 +60,7 @@ function criar_linha_tabela(arrayLinha){
     }
     document.querySelector("#corpo-tabela").appendChild(cadaLinha)
 }
+let selecoesUnique = retornar_unico_alfabetico()
 for (paisA of selecoesUnique){
     criar_linha_tabela(criar_dados_linha(paisA,anosCopa,jogos))
 }

@@ -18,12 +18,12 @@ const localizarJogo = (ano, fase)=>{ //retorna um array completo com todas infor
     return [...x]
 }
 const vencedorPartida = (s1,p1,p2,s2,pen="",ven = true) =>{ 
-    let aux = "empate"
+    let aux = ""
     if (p1 > p2) {aux = s1}
     else if (p1 < p2) {aux =  s2}
     else if (p1 == p2 && !pen == ""){
-        if (Number( pen.slice(1,2)) > Number( pen.slice(3,4))){
-            // adaptar para aceitar qualquer placar de pênalti, tendo ou não pararenteses.
+        if (Number( (pen.toUpperCase().split("X")[0]).replace(/\D/g,"")) > Number( (pen.toUpperCase().split("X")[1]).replace(/\D/g,""))){
+            // \D - Representa todos caracteres que não sejam números
             aux = s1
         }
         else {aux = s2}        
@@ -35,7 +35,7 @@ const vencedorPartida = (s1,p1,p2,s2,pen="",ven = true) =>{
     return aux
 }
 
-console.log(vencedorPartida("Brasi","3","3","Argentina","(4x2)",false))
+console.log("Vencedor: " + vencedorPartida("Brasi","3","3","Argentina","(2x1)",true))
 
 const determinarSemi = (ano, posicao=1) => {
     if (posicao == 1) {
