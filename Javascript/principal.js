@@ -8,6 +8,15 @@ function listar_jogos_por_copa(ano){
     }
     return copa
 }
+//Funcionalidades exclusivas para montar a página index.html:
+
+let seletorAno = document.querySelector("#ano-da-copa")
+for (a of anosCopa){
+    let opcao = document.createElement("option")
+    opcao.text = a
+    seletorAno.appendChild(opcao)
+
+}
 
 function montar_placar (pais1, placar1, placar2, pais2, dataLocal, penalti ,tagGrupo){
     let placarCompleto = document.createElement("section")

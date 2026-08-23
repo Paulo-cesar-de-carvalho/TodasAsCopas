@@ -1,71 +1,3 @@
-const listarAnosCopa = ()=>{
-    let x = []
-    for (i=1930;i<2027;i=i+4){
-        if (i<1939 || i>1948){
-            x.push (i)
-        }
-    }
-return x
-}
-const anosCopa = [...listarAnosCopa()]
-
-const localizarJogo = (ano, fase)=>{ //retorna um array completo com todas informações da(s) paridas correspondentes - array com array 
-    let x = jogos.filter((el)=>{
-        if (ano == el[1] &&  fase == el[2]){
-            return  el           
-        }
-    })
-    return [...x]
-}
-const vencedorPartida = (s1,p1,p2,s2,pen="",ven = true) =>{ 
-    let aux = ""
-    if (p1 > p2) {aux = s1}
-    else if (p1 < p2) {aux =  s2}
-    else if (p1 == p2 && !pen == ""){
-        if (Number( (pen.toUpperCase().split("X")[0]).replace(/\D/g,"")) > Number( (pen.toUpperCase().split("X")[1]).replace(/\D/g,""))){
-            // \D - Representa todos caracteres que não sejam números
-            aux = s1
-        }
-        else {aux = s2}        
-    }
-    if(!ven){
-        if (aux == s2) {aux = s1}
-        else if (aux == s1) {aux = s2}  
-    }
-    return aux
-}
-
-console.log("Vencedor: " + vencedorPartida("Brasi","3","3","Argentina","(2x1)",true))
-
-const determinarSemi = (ano, posicao=1) => {
-    if (posicao == 1) {
-        const jogo = localizarJogo(ano, "FINAL")[0]
-        let selecao = vencedorPartida(jogo[5],jogo[6],jogo[7],jogo[8],jogo[9])
-        return selecao
-    }
-    if (posicao == 2) {
-        const jogo = localizarJogo(ano, "FINAL")[0]
-        let selecao = vencedorPartida(jogo[5],jogo[6],jogo[7],jogo[8],jogo[9],false)
-        return selecao
-    }
-    if (posicao == 3) {
-        if (ano == 1950){return "Suécia"}
-        if (ano == 1930){return ""}
-        const jogo = localizarJogo(ano, "DECISÃO 3º LUGAR")[0]
-        let selecao = vencedorPartida(jogo[5],jogo[6],jogo[7],jogo[8],jogo[9])
-        return selecao
-    }
-    if (posicao == 4) {
-        if (ano == 1950){return "Espanha"}
-        if (ano == 1930){return ""}
-        const jogo = localizarJogo(ano, "DECISÃO 3º LUGAR")[0]
-        let selecao = vencedorPartida(jogo[5],jogo[6],jogo[7],jogo[8],jogo[9],false)
-        return selecao
-    }
-// incluir exceção para quando não houver decisão de 3º lugar e para copas em andamento.
-// incluiir exceção para 1950 e para 1930
-}
-console.log(determinarSemi(2022,1))
 criar_tabela(anosCopa)
 
 function criar_tabela(anosCopa){
@@ -87,5 +19,3 @@ function criar_tabela(anosCopa){
     corpoTabela.appendChild(linha)
     }   
 }
-
-console.log (anosCopa)

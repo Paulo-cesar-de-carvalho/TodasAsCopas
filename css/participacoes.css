@@ -14,7 +14,6 @@ h1{
     text-align: center;
 }
 
-
 .tabela-completa{
     overflow-x: auto;
     
@@ -23,17 +22,12 @@ h1{
     border-collapse: collapse;   
 }
 
-#thead-tabela>tr{
-    border-collapse: collapse;
-}
-
 .cabecalho-ano{
     height: 35px;
     border: solid 1px black;
     transform: rotate(-90deg);
     background-color: black;
     color: white;
-    
     
 }
 
@@ -46,7 +40,6 @@ h1{
 tbody>tr:nth-child(2n+1){
     background-color: rgb(132, 148, 132);
 }
-
 
 td{
     width: 18px;

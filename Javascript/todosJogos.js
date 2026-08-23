@@ -1070,13 +1070,8 @@ const jogos = [["13/07/1930 DOM","1930","GRUPO A","Pocitos","Montevidéu","Fran�
 
 const temas = ["Data","Ano","Fase","Estádio","Cidade","Seleção1","Placar1","Placar2","Seleção2","Pênalti"]
 
-function retornar_unico_alfabetico(){
-    let selecoes = []
-    jogos.map((jogo)=>{
-        selecoes.push (jogo[5])
-        selecoes.push (jogo[8])
-    })
-    let selecoesUnique =  [...new Set( selecoes)]
-    selecoesUnique.sort((a, b) => a.localeCompare(b, 'pt-BR', { sensitivity: 'base' })); //ordena alfabetico desconsiderando acentos
-    return selecoesUnique
-}
+const ordemGrupos = ['GRUPO A','GRUPO B','GRUPO C','GRUPO D','GRUPO E','GRUPO F','GRUPO G','GRUPO H','GRUPO I','GRUPO J','GRUPO K', 'GRUPO L',
+    ,'16 AVOS DE FINAL','OITAVAS DE FINAL','QUARTAS DE FINAL','GRUPO QUARTAS DE FINAL 1','GRUPO QUARTAS DE FINAL 2','GRUPO QUARTAS DE FINAL 3','GRUPO QUARTAS DE FINAL 4',
+    'SEMIFINAIS','GRUPO SEMIFINAIS A','GRUPO SEMIFINAIS B','FASE FINAL','DECISÃO 3º LUGAR','FINAL']
+
+
