@@ -61,3 +61,5 @@ function pesquisar(){
     })
 
 }
+
+//incluir data-id nos elementos. Para acessar depois basta elemento.dataset.id

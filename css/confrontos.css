@@ -1,5 +1,6 @@
 table{
     border-collapse: collapse;
+    margin: 0px;
 }
 
 td,th{
@@ -8,6 +9,7 @@ td,th{
     border-collapse: separate;
     margin: 0;
     padding: 0;
+    
 }
 th{
     writing-mode: vertical-lr;
@@ -15,7 +17,18 @@ th{
     text-align: left;
     font-size: 12px;
 }
+td{
+    width: 25px;
+    height: 7px;
+}
+
 .primeira-coluna{
     text-align: left;
     font-size: 12px;
+    
+}
+td:hover{
+    background-color: black;
+    width: 50px;
+    font-weight: bold;
 }

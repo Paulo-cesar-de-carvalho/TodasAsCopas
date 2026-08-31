@@ -3,8 +3,14 @@
     padding: 0px;
     border: 0px;
 }
+
 body{
     background-color: aquamarine;
+}
+header{
+    margin: 15px;
+    text-align: center;
+    padding: 15px;
 }
 
 h1{
@@ -16,29 +22,24 @@ h1{
 
 .tabela-completa{
     overflow-x: auto;
-    
+    margin: auto;
 }
+
 #tabela{
+    width: 80%;
     border-collapse: collapse;   
 }
 
-.cabecalho-ano{
+th{ 
+    position: sticky;
+    top:0px;
     height: 35px;
     border: solid 1px black;
-    transform: rotate(-90deg);
     background-color: black;
     color: white;
-    
 }
-
-.primeira-coluna{
-    width: 200px;
-    height: 18px;
-    font-size: 12px;
-}
-
-tbody>tr:nth-child(2n+1){
-    background-color: rgb(132, 148, 132);
+th:not(.primeira-coluna){ /*exceçõa*/
+    transform: rotate(-90deg);
 }
 
 td{
@@ -46,6 +47,17 @@ td{
     height: 18px;
     text-align: center;
     border: 1px solid black;
-    
+    font-size: 16px;
 }
+
+.primeira-coluna:not(th){    
+    width: 150px;
+    height: 18px;
+    text-align: left;
+}
+
+.tabela-completa>tr:nth-child(2n){
+    background-color: rgb(132, 148, 132);
+}
+
 

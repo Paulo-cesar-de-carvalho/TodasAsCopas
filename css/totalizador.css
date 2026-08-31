@@ -1,0 +1,13 @@
+th{
+    transform: rotate(0) ;
+    writing-mode: horizontal-tb;
+    width: 35px;
+    text-align: center;
+    height: 25px;
+    background-color: black;
+    color: white;    
+}
+
+td{
+    height: 30px;
+}

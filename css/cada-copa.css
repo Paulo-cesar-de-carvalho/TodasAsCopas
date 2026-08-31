@@ -1,0 +1,24 @@
+.tabela-anos{
+    background-color: aqua;
+    display: flex;
+    padding: 5px;
+    width: 80%;
+    max-width: 270px;
+}
+
+.cada-ano{
+    border: 1px solid black;
+    margin: 3px;
+    padding: 6px;
+}
+
+.area-principal{
+    width: 100%;
+    max-width: 270px;
+    border: 1px solid black;
+    height: 60vh;
+    position: absolute;
+    transform-origin: center;
+    margin: auto;
+    display: inline-flex;
+}

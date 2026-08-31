@@ -9,14 +9,25 @@
 </head>
 <body>
     <header>
+        <a href=../index.html >Todas as Copas</a>
         <h1>Participações em Copas do Mundo</h1>
+        <div id="menu-escolha">
+            <input type="radio" name="item" id="jg" value="j" checked>
+            <label for="jg">Jogos</label>
+            <input type="radio" name="item" id="pt" value="pt">
+            <label for="pt">Participações</label>
+            <input type="radio" name="item" id="pg" value="pg">
+            <label for="pg">Pontos</label>
+            <input type="radio" name="item" id="gp" value="gp">
+            <label for="gp">Gols</label>
+            <input type="checkbox" name="acum" id="acum">
+            <label for="acum">Acumulado</label>
+        </div>
     </header>
     <main>
-        <section class="tabela-completa">
-            <table id="tabela">
-                <thead id="thead-tabela"></thead>
-                <tbody id="corpo-tabela"></tbody>
-                <tfoot></tfoot>
+        <section >
+            <table id="tabela" class="tabela-completa">
+                <!-- <thead id="thead-tabela"></thead> -->
             </table>
         </section>
     </main>

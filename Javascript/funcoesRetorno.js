@@ -1,3 +1,5 @@
+//const temasRetorno = ["FIFA","PG","J","V","E","D","GP","GC","SG"]
+
 function retornar_unico_alfabetico(){
     let selecoes = []
     jogos.map((jogo)=>{
@@ -38,15 +40,20 @@ const vencedorPartida = (s1,p1,p2,s2,pen="",ven = true) =>{
     return aux
 }
 
-const localizarJogo = (ano, fase = "")=>{ //retorna um array completo com todas informações da(s) paridas correspondentes - array com array 
-    let x = jogos.filter((el)=>{
+const localizarJogo = (ano, fase = "", selecao ="")=>{ //retorna um array completo com todas informações da(s) paridas correspondentes - array com array 
+    let x = jogos.filter((el,i)=>{
         if (ano == el[1] &&  (fase == el[2]) || (fase =="")){
-            return  el           
+            if (selecao == "" || el[5] == selecao || el[8] == selecao){
+                return  el.push (i)           
+            }
         }
     })
     return [...x]
 }
+//const localizarJogoSelecai = (ano,fase="",selecao =""){
 
+//}
+console.log(localizarJogo(1998,'SEMIFINAIS',"Brasil"))
 const determinarSemi = (ano, posicao=1) => {
     if (posicao == 1) {
         const jogo = localizarJogo(ano, "FINAL")[0]
@@ -76,7 +83,6 @@ const determinarSemi = (ano, posicao=1) => {
 // incluiir exceção para 1950 e para 1930
 }
 
-//pontos fifa, pontod, jgod, v, e d GP e GC
 function somar_jogos(selecao, base){
     let x = 0
     base.map((e)=>{
@@ -86,7 +92,8 @@ function somar_jogos(selecao, base){
     })
     return x
 }
- 
+
+//Função que lista todas seleções por ordem de número de jogos
 function listar_ordem_jogos(){
     x = selecoesUnique.sort((a,b)=>{
         return somar_jogos(b,jogos) - somar_jogos(a, jogos)
@@ -115,4 +122,60 @@ function contar_confrontos(selecao1, selecao2, base){
         }            
     })
     return selecao1==selecao2?" - " :[...x].length
+}
+
+//Função  gera um array com os dados do jogo.
+function analisar_partidas(selecao, base,ano=""){
+    //if (ano !=""){base = [...localizarJogo(ano)]}
+    let pg = 0 , fifa = 0, j = 0, v = 0,  em = 0, d = 0, gp = 0, gc = 0, sg = 0
+    let arrayRetorno = []
+    base.map((e)=>{
+        if(ano==e[1] || ano==""){
+            if(selecao == e[5]){
+                j++, gp += Number(e[6]), gc += Number(e[7])
+                if(e[6]==e[7]){
+                    pg++ , em++
+                }
+                if(e[6]>e[7]){
+                    v++,  pg += (Number(e[1])<1994?2:3)
+                }
+                if(e[6]<e[7]){d++}
+            }
+            if (selecao == e[8]){
+                j++, gp += Number( e[7]), gc += Number(e[6])
+                if(e[6]==e[7]){
+                    em ++, pg++
+                }
+                if(e[6]<e[7]){
+                    v++, pg += (Number(e[1])<1994?2:3)
+                }
+                if(e[6]>e[7]){d++}
+            }
+        }
+    })
+    sg = gp - gc
+    fifa = 3*v + em
+    arrayRetorno = [fifa,pg, j,v,em,d,gp,gc,sg]
+    return arrayRetorno
+}
+
+function determinarFaixaRgb(passo, passos, rIni, gIni, bIni , rFim, gFim, bFim,crescente = true){ 
+    y = crescente? passo: passos-passo
+    let xR = Math.floor((rFim-rIni)/passos * y + rIni)
+    let xG = Math.floor((gFim-gIni)/passos * y + gIni)
+    let xB = Math.floor((bFim-bIni)/passos * y + bIni)
+    let x = `rgb(${xR},${xG},${xB})`
+    return x
+}
+const corAleatoria = () =>{
+    let r = Math.floor(Math.random()*255)
+    let g = Math.floor(Math.random()*255)
+    let b = Math.floor(Math.random()*255)
+    let x = `rgb(${r},${g},${b})`
+    return  x  
+}
+
+function contar_elementos(elemento, base){
+    let quantidadeElementos = base.filter(x => x === elemento).length;
+    return quantidadeElementos
 }
