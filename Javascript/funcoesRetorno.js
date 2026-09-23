@@ -53,7 +53,7 @@ const localizarJogo = (ano, fase = "", selecao ="")=>{ //retorna um array comple
 //const localizarJogoSelecai = (ano,fase="",selecao =""){
 
 //}
-console.log(localizarJogo(1998,'SEMIFINAIS',"Brasil"))
+//console.log(localizarJogo(1998,'SEMIFINAIS',"Brasil"))
 const determinarSemi = (ano, posicao=1) => {
     if (posicao == 1) {
         const jogo = localizarJogo(ano, "FINAL")[0]
@@ -179,3 +179,4 @@ function contar_elementos(elemento, base){
     let quantidadeElementos = base.filter(x => x === elemento).length;
     return quantidadeElementos
 }
+

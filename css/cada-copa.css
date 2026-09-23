@@ -1,24 +1,68 @@
-.tabela-anos{
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
     background-color: aqua;
+
+}
+body{
+    width: 350px;
+}
+
+.tabela-anos{
     display: flex;
+    flex-wrap: wrap;
     padding: 5px;
-    width: 80%;
-    max-width: 270px;
+    width: 95%;
+    margin: auto;
+    
 }
 
 .cada-ano{
     border: 1px solid black;
-    margin: 3px;
+    margin: 3px 0px;
     padding: 6px;
+    cursor: pointer;
+    background-color: rgb(198, 196, 196);
+    box-shadow: 5px black;
+    border-radius: 5px 5px 0px 0px;
+    /*display: block;*/
+    /*flex-wrap: wrap;*/
+}
+.cada-ano:hover{
+    color: blue;
+    text-decoration: underline;
+    transition: 1s;
 }
 
 .area-principal{
-    width: 100%;
-    max-width: 270px;
-    border: 1px solid black;
-    height: 60vh;
+    width: 95%;
+    max-width: 350px;
     position: absolute;
     transform-origin: center;
     margin: auto;
     display: inline-flex;
+    border: solid black 1px;
+}
+.cada-jogo{ /*engloba a div campo */
+    display: flex;
+    margin: auto;
+    width: 70px;
+    height: 90px;
+    align-items: center;
+    
+}
+.campo{ /*engloba as bandeira e a div central */
+    margin: auto;
+}
+.bandeira{
+    width: 30px;
+    height: 20px;
+    margin: auto;
+}
+.div-divisor{
+    height: 10px;
+    border: solid 1px black;
+    width: 0.1px;
+    margin: auto;
 }
